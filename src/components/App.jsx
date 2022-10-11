@@ -30,7 +30,6 @@ export default function App() {
         setImages(prevImages => {
           return [...prevImages, ...data.hits];
         });
-        setIsLoading(false);
 
         if (data.totalHits === 0) {
           return Report.warning('Not found!', 'Sorry, Nothing found', 'Close');
@@ -50,8 +49,10 @@ export default function App() {
         }
       })
       .catch(error => {
-        setIsLoading(false);
         console.log(error);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   }, [searchQuery, page]);
 

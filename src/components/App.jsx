@@ -27,7 +27,9 @@ export default function App() {
 
     fetchGallery(searchQuery, page)
       .then(data => {
-        setImages([...images, ...data.hits]);
+        setImages(prevImages => {
+          return [...prevImages, ...data.hits];
+        });
         setIsLoading(false);
 
         if (data.totalHits === 0) {

@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import PropTypes from 'prop-types';
 import css from './Modal.module.css';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 const modalRoot = document.querySelector('#modal-root');
 

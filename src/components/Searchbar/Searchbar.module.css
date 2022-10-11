@@ -12,7 +12,7 @@
   padding-top: 12px;
   padding-bottom: 12px;
   margin-bottom: 5px;
-  background-color: #5b67a8;
+  background-color: #1a1a1a;
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.3), 0px 4px 5px 0px rgba(0, 0, 0, 0.3),
     0px 1px 10px 0px rgba(0, 0, 0, 0.3);
 }
@@ -22,20 +22,22 @@
   align-items: center;
   width: 100%;
   max-width: 600px;
-  background-color: #fff;
-  border-radius: 3px;
+  background-color: #191919;
+  border-radius: 8px;
   overflow: hidden;
+  border: 1px solid #118da8;
 }
 
 .button {
   display: inline-block;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border: 0;
   opacity: 0.6;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   outline: none;
+  background-color: #3d3d3d;
 }
 
 .button:hover {
@@ -44,7 +46,7 @@
 
 .buttonLabel {
   border: 0;
-  fill: #212d75;
+  fill: #118da8;
   width: 20px;
   height: 20px;
 }
@@ -57,11 +59,17 @@
   border: none;
   outline: none;
   padding: 5px 15px;
+  background-color: #191919;
+  color: #fff;
+  text-align: center;
 }
 
 .input::placeholder {
   font: inherit;
   font-size: 18px;
+  color: #302f2f;
+  font-size: 16px;
+  text-align: center;
 }
 
 .SearchForm-input::placeholder {

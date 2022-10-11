@@ -9,9 +9,13 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1200;
+  backdrop-filter: saturate(180%) blur(10px);
 }
 
 .modal {
   max-width: calc(100vw - 48px);
   max-height: calc(100vh - 24px);
+  position: relative;
+  transition: all 250ms linear;
+  box-shadow: 0.5px 0.5px 1px #14a2c2, -0.5px -0.5px 4px #14a2c2;
 }
